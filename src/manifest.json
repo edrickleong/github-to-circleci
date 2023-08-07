@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "version": "0.6.0",
+  "author": "edrick",
+  "name": "GitHub to CircleCI",
+  "description": "Open your CircleCI pipelines directly from a GitHub repository, PR or release tag.",
+  "icons": {
+    "128": "assets/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "github.tsx"
+      ],
+      "css": []
+    },
+    {
+      "matches": [
+        "https://app.circleci.com/pipelines/*"
+      ],
+      "js": [
+        "circleci.tsx"
+      ],
+      "css": []
+    }
+  ]
+}

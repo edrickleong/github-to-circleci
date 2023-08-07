@@ -1,0 +1,9 @@
+# IDE
+.idea
+
+# Depndencies
+node_modules
+
+# Build files
+.parcel-cache
+dist
