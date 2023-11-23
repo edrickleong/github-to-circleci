@@ -4,7 +4,7 @@ const filterByTag = () => {
   if (!tag) return
 
   const getSeeMoreButton = () =>
-    Array.from(document.querySelectorAll(".css-1u7cwjg")).find((it) =>
+    Array.from(document.querySelectorAll("button")).find((it) =>
       (it as HTMLElement).innerText.startsWith("See more"),
     ) as HTMLButtonElement
 
@@ -53,6 +53,7 @@ const filterByTag = () => {
   })
 
   const checkInterval = setInterval(() => {
+    console.debug("Checking for see more button")
     const button = getSeeMoreButton()
     if (button) {
       clearInterval(checkInterval)

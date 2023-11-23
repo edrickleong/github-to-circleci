@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "edrick",
   "name": "GitHub to CircleCI",
   "description": "Open your CircleCI pipelines directly from a GitHub repository, PR or release tag.",
